@@ -31,23 +31,23 @@ function Nav() {
           </Link>
         </li>
         <li>
-          <Link to="/" className="py-2 px-6 uppercase font-light">
+          <Link to="/events" className="py-2 px-6 uppercase font-light">
             Events
           </Link>
         </li>
       </ul>
 
       <ul className="flex items-center my-4 w-1/4 justify-evenly">
-        <li className="bg-slate-900 rounded-full">
+        <li className="bg-black rounded-full">
           <GrInstagram className="text-4xl py-2 px-2 text-white" />
         </li>
-        <li className="bg-slate-900 rounded-full">
+        <li className="bg-black rounded-full">
           <FaFacebookF className="text-4xl py-2 px-2 text-white" />
         </li>
-        <li className="bg-slate-900 rounded-full">
+        <li className="bg-black rounded-full">
           <FaTwitter className="text-4xl py-2 px-2 text-white" />
         </li>
-        <li className="bg-slate-900 rounded-full">
+        <li className="bg-black rounded-full">
           <FaYoutube className="text-4xl py-2 px-2 text-white" />
         </li>
       </ul>
