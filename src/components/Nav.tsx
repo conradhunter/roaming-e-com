@@ -6,32 +6,34 @@ import { GrInstagram } from "react-icons/gr";
 
 function Nav() {
   return (
-    <nav className="flex flex-col items-center h-1/5 border-b-2 border-b-black">
-      <img src={navLogo} alt="Navigation Bar Logo" className="w-72 my-4" />
+    <nav className="flex flex-col items-center border-b-2 border-b-black">
+      <Link to="">
+        <img src={navLogo} alt="Navigation Bar Logo" className="w-72 my-4" />
+      </Link>
 
       <ul className="flex my-4">
         <li>
-          <Link to="/" className="py-2 px-6 uppercase font-light">
+          <Link to="/" className="py-2 px-6 uppercase">
             Home
           </Link>
         </li>
         <li>
-          <Link to="/shop" className="py-2 px-6 uppercase font-light">
+          <Link to="/shop" className="py-2 px-6 uppercase">
             Shop
           </Link>
         </li>
         <li>
-          <Link to="/media" className="py-2 px-6 uppercase font-light">
+          <Link to="/media" className="py-2 px-6 uppercase">
             Media
           </Link>
         </li>
         <li>
-          <Link to="/riders" className="py-2 px-6 uppercase font-light">
+          <Link to="/riders" className="py-2 px-6 uppercase">
             Riders
           </Link>
         </li>
         <li>
-          <Link to="/events" className="py-2 px-6 uppercase font-light">
+          <Link to="/events" className="py-2 px-6 uppercase">
             Events
           </Link>
         </li>

@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from '../assets/roaming-logo.png';
 
 function Footer() {
   return (
-    <footer className='my-10 mx-20'>
+    <footer className='py-10 px-20 flex justify-between items-center border-t-2 border-t-black'>
         <ul>
           <li>
             <Link to='/'>About</Link>
@@ -25,6 +26,9 @@ function Footer() {
           </li>
         </ul>
 
+        <Link to='/'>
+          <img src={logo} alt="Footer Logo" className='w-72 h-full' />
+        </Link>
 
     </footer>
   )
