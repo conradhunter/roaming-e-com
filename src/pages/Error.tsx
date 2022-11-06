@@ -9,7 +9,7 @@ function Error() {
   let response = new Response();
 
   return (
-    <div>Error {response.status}: {!response.statusText ? 'All Good' : 'Unknown Error'}</div>
+    <div>Error {response.status}: {response.statusText}</div>
   )
 }
 

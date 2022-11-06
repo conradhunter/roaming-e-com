@@ -8,6 +8,7 @@ import Shop from "./pages/Shop";
 import Team from "./pages/Team";
 import Events from "./pages/Events";
 import Error from "./pages/Error";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
   const [error, setError] = useState<boolean>(false);
 
   return (
-    <div className="App">
+    <div className="App bg-blue-100">
       <Router>
         <Nav />
 
@@ -27,6 +28,8 @@ function App() {
           <Route path='/events' element={<Events/>} />
           <Route path='/error'  element={<Error/>} />
         </Routes>
+
+        <Footer />
 
       </Router>
 
