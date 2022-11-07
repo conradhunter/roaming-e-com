@@ -9,6 +9,7 @@ import Team from "./pages/Team";
 import Events from "./pages/Events";
 import Error from "./pages/Error";
 import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
 
 function App() {
 
@@ -21,12 +22,19 @@ function App() {
         <Nav />
 
         <Routes>
+
+          {/* NAVIGATION LINK ROUTES */}
           <Route path='/' element={<Home/>} />
           <Route path='/media' element={<Media/>} />
           <Route path='/shop' element={<Shop/>} />
           <Route path='/riders' element={<Team/>} />
           <Route path='/events' element={<Events/>} />
           <Route path='/error'  element={<Error/>} />
+
+          {/* OTHER LINK ROUTES */}
+          <Route path='/contact'  element={<Contact/>} />
+
+
         </Routes>
 
         <Footer />
