@@ -10,6 +10,7 @@ import Events from "./pages/Events";
 import Error from "./pages/Error";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
+import FAQ from "./pages/FAQ";
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
 
           {/* OTHER LINK ROUTES */}
           <Route path='/contact'  element={<Contact/>} />
+          <Route path='/FAQ'  element={<FAQ/>} />
 
 
         </Routes>

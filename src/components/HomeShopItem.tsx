@@ -10,12 +10,12 @@ function HomeShopItem({ productsList }) {
             <h1>{product.product}</h1>
             <h1>{product.price}</h1>
             <select name="" id="" className="select select-primary w-fit bg-blue-100">
-              {<option value="">S</option>}
-              {<option value="">M</option>}
-              {<option value="">L</option>}
-              {<option value="">XL</option>}
-              {<option value="">2XL</option>}
-              {<option value="">3XL</option>}
+              <option value="">{product.sizes[0]}</option>
+              <option value="">{product.sizes[1]}</option>
+              <option value="">{product.sizes[2]}</option>
+              <option value="">{product.sizes[3]}</option>
+              <option value="">{product.sizes[4]}</option>
+              <option value="">{product.sizes[5]}</option>
             </select>
             <button className="btn btn-primary w-fit mx-auto uppercase">Add To Cart</button>
           </div>

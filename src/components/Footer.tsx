@@ -7,13 +7,10 @@ function Footer() {
     <footer className='py-10 px-20 flex justify-between items-center border-t-2 border-t-black'>
         <ul>
           <li>
-            <Link to='/'>About</Link>
-          </li>
-          <li>
             <Link to='/contact'>Contact</Link>
           </li>
           <li>
-            <Link to='/'>FAQ</Link>
+            <Link to='/FAQ'>FAQ</Link>
           </li>
           <li>
             <Link to='/'>Privacy Policy</Link>
