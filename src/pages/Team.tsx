@@ -14,7 +14,7 @@ function Team() {
                 <h1 className="text-xl">{rider.name}</h1>
                 <a
                   href={rider.instagramLink}
-                  className="text-sm"
+                  className="text-xs"
                   target="_blank"
                 >
                   {rider.instagramLink}

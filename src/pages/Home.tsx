@@ -9,9 +9,9 @@ import { homePageProducts } from "../data/homeShopItems";
 
 function Home() {
   return (
-    <main>
-      <section className="mb-32">
-        <CCarousel controls>
+    <main className="">
+      <section className="">
+        <CCarousel controls interval={3000}>
           <CCarouselItem>
             <CImage src={react} alt="slide 1" />
           </CCarouselItem>
@@ -24,9 +24,10 @@ function Home() {
         </CCarousel>
       </section>
 
-      <section>
-        <div className="w-1/4 flex flex-wrap">
-          {homePageProducts.map((product) => {
+      <section className="row mx-auto">
+        <h1 className="my-12 text-4xl text-center">Picks for you.</h1>
+        <div className="flex flex-row justify-center">
+          {homePageProducts.slice(0, 1).map((product) => {
             return (
               <HomeShopItem
                 key={product.item}
@@ -35,6 +36,10 @@ function Home() {
             );
           })}
         </div>
+      </section>
+
+      <section>
+       {/* Search query / category search input?? */}
       </section>
     </main>
   );

@@ -12,28 +12,29 @@ function Contact() {
         >
           <div className="flex flex-col w-5/12">
             <label htmlFor="">Full Name</label>
-            <input type="text" />
+            <input type="text" className="input input-bordered input-primary w-full max-w-md bg-blue-100 border-2" />
           </div>
           <div className="flex flex-col w-5/12">
             <label htmlFor="">Email</label>
-            <input type="email" />
+            <input type="email" className="input input-bordered input-primary w-full max-w-md bg-blue-100 border-2" />
           </div>
           <div className="flex flex-col w-5/12">
             <label htmlFor="">Phone Number</label>
             <input
               type="tel" /* JS intl. tel input https://www.twilio.com/blog/international-phone-number-input-html-javascript   */
+              className="input input-bordered input-primary w-full max-w-md bg-blue-100 border-2"
             />
           </div>
           <div className="flex flex-col w-5/12">
             <label htmlFor="">Subject</label>
-            <select name="Subject" id="">
+            <select name="Subject" className="input input-bordered input-primary w-full max-w-md bg-blue-100 border-2">
               <option value="hello">Hello</option>
               <option value="world">World</option>
             </select>
           </div>
           <div className="flex flex-col w-5/12">
             <label htmlFor="">Message</label>
-            <textarea name="" id="" cols={30} rows={10} className='mb-8 w-full'></textarea>
+            <textarea name="" id="" cols={30} rows={10} className='mb-8 textarea textarea-primary bg-blue-100 border-2'></textarea>
             <button className="btn btn-primary w-32 mx-auto">Submit</button>
           </div>
         </form>

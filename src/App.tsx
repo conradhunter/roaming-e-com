@@ -17,7 +17,7 @@ function App() {
   const [error, setError] = useState<boolean>(false);
 
   return (
-    <div className="App bg-blue-100">
+    <div className="App bg-blue-100 font-mono">
       <Router>
         <Nav />
 
