@@ -2,6 +2,9 @@ import React from "react";
 import { riders } from "../data/riders";
 
 function Team() {
+
+  // Add blur/gray-scale filter to rider images on hover for better contrast on rider information
+
   return (
     <main className="row mx-auto">
         <h1 className="my-12 text-4xl text-center">Riders.</h1>
@@ -10,7 +13,6 @@ function Team() {
           return (
             <div id="rider-wrapper" key={rider.id} className="border-black border-2 relative">
               <div id="rider-info" className="w-full h-full flex-col flex items-center justify-center absolute">
-                <h1 className="text-lg">{rider.id}</h1>
                 <h1 className="text-xl">{rider.name}</h1>
                 <a
                   href={rider.instagramLink}
@@ -22,8 +24,9 @@ function Team() {
               </div>
               <img
                 src={rider.riderImg}
-                alt="rider"
+                alt="Team Rider"
                 className="w-72 h-72 object-cover"
+                id="rider-img"
               />
             </div>
           );

@@ -3,29 +3,33 @@ import React, { useEffect, useState } from "react";
 import MediaImage from "../components/MediaImage.js";
 import { storage } from "../firebase/firebaseConfig.js";
 import { v4 } from "uuid";
+import Skeleton from "@mui/material/Skeleton";
 
 function Media() {
   const [fileList, setFileList] = useState<any>([]);
   const fileListRef = ref(storage, "media/");
+  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     listAll(fileListRef).then((response) => {
       response.items.forEach((item) => {
         getDownloadURL(item).then((url) => {
           setFileList((prev: Array<any>) => [...prev, url]);
+          setLoading(false);
         });
       });
     });
-    console.log(fileList);
   }, []);
 
   return (
     <main className="row mx-auto">
       <h1 className="my-12 text-4xl text-center">Media.</h1>
       <section className="flex flex-wrap gap-8 items-center justify-center mb-12">
-        {fileList.slice(0,50).map((url: any) => {
-          return <MediaImage key={url + v4()} url={url} />;
-        })}
+      {fileList.slice(0,50).map((url: any) => {
+        return (
+          <MediaImage key={url + v4()} url={url} />
+        )
+      })}
       </section>
 
       <section className="mb-12">

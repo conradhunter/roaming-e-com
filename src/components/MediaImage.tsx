@@ -1,9 +1,10 @@
 import React from "react";
 
+
 function MediaImage({ url }: any) {
   return (
-    <div className="w-72 rounded-3xl overflow-hidden">
-      <img src={url} alt="" />
+    <div className="w-72">
+        <img src={url} alt="Roaming Image" />
     </div>
   );
 }

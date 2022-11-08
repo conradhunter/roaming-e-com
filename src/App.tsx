@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import Nav from "./components/Nav";
-import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Media from "./pages/Media";
 import Shop from "./pages/Shop";
@@ -20,7 +20,7 @@ function App() {
 
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
-
+  
   return (
     <div className="App bg-blue-100 font-mono">
       <Router>

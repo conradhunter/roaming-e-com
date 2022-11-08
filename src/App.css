@@ -2,4 +2,10 @@
     max-width: 1100px;
 }
 
+#rider-info {
+    display: none;
+}
 
+#rider-wrapper:hover #rider-info {
+    display: flex;
+}
