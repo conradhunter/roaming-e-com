@@ -4,22 +4,22 @@ import logo from '../assets/roaming-logo.png';
 
 function Footer() {
   return (
-    <footer className='py-10 px-20 flex justify-between items-center border-t-2 border-t-black'>
+    <footer className='py-10 px-20 flex flex-row-reverse justify-between items-center border-t-2 border-t-black'>
         <ul>
-          <li>
+          <li className='text-right'>
             <Link to='/contact'>Contact</Link>
           </li>
-          <li>
-            <Link to='/FAQ'>FAQ</Link>
+          <li className='text-right'>
+            <Link className='text-right' to='/FAQ'>FAQ</Link>
           </li>
-          <li>
-            <Link to='/'>Privacy Policy</Link>
+          <li className='text-right'>
+            <Link className='text-right' to='/privacy-policy'>Privacy Policy</Link>
           </li>
-          <li>
-            <Link to='/'>Terms of Service</Link>
+          <li className='text-right'>
+            <Link className='text-right' to='/terms-of-service'>Terms of Service</Link>
           </li>
-          <li>
-            <Link to='/'>Refund Policy</Link>
+          <li className='text-right'>
+            <Link className='text-right' to='/refund-policy'>Refund Policy</Link>
           </li>
         </ul>
 

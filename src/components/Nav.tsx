@@ -40,17 +40,25 @@ function Nav() {
       </ul>
 
       <ul className="flex items-center my-4 w-1/4 justify-evenly">
-        <li className="bg-black rounded-full">
-          <GrInstagram className="text-4xl py-2 px-2 text-white" />
+        <li className="bg-black rounded-full hover:scale-105 transition-all duration-300">
+          <a href="https://www.google.com" target='_blank'>
+            <GrInstagram className="text-4xl py-2 px-2 text-blue-100" />
+          </a>
         </li>
-        <li className="bg-black rounded-full">
-          <FaFacebookF className="text-4xl py-2 px-2 text-white" />
+        <li className="bg-black rounded-full hover:scale-105 transition-all duration-300">
+          <a href="https://www.google.com" target='_blank'>
+            <FaFacebookF className="text-4xl py-2 px-2 text-blue-100" />
+          </a>
         </li>
-        <li className="bg-black rounded-full">
-          <FaTwitter className="text-4xl py-2 px-2 text-white" />
+        <li className="bg-black rounded-full hover:scale-105 transition-all duration-300">
+          <a href="https://www.google.com" target='_blank'>
+            <FaTwitter className="text-4xl py-2 px-2 text-blue-100" />
+          </a>
         </li>
-        <li className="bg-black rounded-full">
-          <FaYoutube className="text-4xl py-2 px-2 text-white" />
+        <li className="bg-black rounded-full hover:scale-105 transition-all duration-300">
+          <a href="https://www.google.com" target='_blank'>
+            <FaYoutube className="text-4xl py-2 px-2 text-blue-100" />
+          </a>
         </li>
       </ul>
     </nav>

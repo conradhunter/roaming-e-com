@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
-import react from "../assets/react.jpeg";
-import vue from "../assets/vue.jpeg";
-import angular from "../assets/angular.jpeg";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import HomeShopItem from "../components/HomeShopItem";
 import { homePageProducts } from "../data/homeShopItems";
+import timberline from '../assets/timber-line.png';
+import streets from '../assets/streets.png';
+import park from '../assets/park.png';
 
 function Home() {
   return (
@@ -13,13 +13,13 @@ function Home() {
       <section className="">
         <CCarousel controls interval={3000}>
           <CCarouselItem>
-            <CImage src={react} alt="slide 1" />
+            <CImage src={timberline} alt="slide 1" />
           </CCarouselItem>
           <CCarouselItem>
-            <CImage src={vue} alt="slide 1" />
+            <CImage src={streets} alt="slide 1" />
           </CCarouselItem>
           <CCarouselItem>
-            <CImage src={angular} alt="slide 1" />
+            <CImage src={park} alt="slide 1" />
           </CCarouselItem>
         </CCarousel>
       </section>
