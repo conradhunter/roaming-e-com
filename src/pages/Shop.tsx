@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import StoreItemPreview from "../components/StoreItemPreview";
 
 function Shop() {
   // Stripe or Shopify??
+
+  const [cart, setCart] = useState([]);
+
+  const addToCart = () => {
+
+  }
 
   return (
     <main className="row mx-auto">

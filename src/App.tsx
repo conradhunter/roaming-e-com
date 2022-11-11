@@ -15,6 +15,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import RefundPolicy from "./pages/RefundPolicy";
 import SizingGuide from "./pages/SizingGuide";
+import Cart from "./pages/Cart";
 
 function App() {
 
@@ -27,7 +28,6 @@ function App() {
         <Nav />
 
         <Routes>
-
           {/* NAVIGATION LINK ROUTES */}
           <Route path='/' element={<Home/>} />
           <Route path='/media' element={<Media/>} />
@@ -35,6 +35,7 @@ function App() {
           <Route path='/riders' element={<Team/>} />
           <Route path='/events' element={<Events/>} />
           <Route path='/error'  element={<Error/>} />
+          <Route path='/cart'  element={<Cart/>} />
 
           {/* OTHER LINK ROUTES */}
           <Route path='/contact'  element={<Contact/>} />
@@ -43,7 +44,7 @@ function App() {
           <Route path='/terms-of-service' element={<TermsOfService/>} />
           <Route path='/refund-policy' element={<RefundPolicy/>} />
           <Route path='/sizing-guide' element={<SizingGuide/>} />
-
+          
         </Routes>
 
         <Footer />

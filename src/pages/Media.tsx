@@ -7,8 +7,8 @@ import Skeleton from "@mui/material/Skeleton";
 
 function Media() {
   const [fileList, setFileList] = useState<any>([]);
-  const fileListRef = ref(storage, "media/");
   const [loading, setLoading] = useState<boolean>(true);
+  const fileListRef = ref(storage, "media/");
 
   useEffect(() => {
     listAll(fileListRef).then((response) => {

@@ -9,7 +9,7 @@ import park from '../assets/park.png';
 
 function Home() {
   return (
-    <main className="">
+    <main>
       <section className="">
         <CCarousel controls interval={3000}>
           <CCarouselItem>
